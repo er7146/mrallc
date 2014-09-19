@@ -1,0 +1,32 @@
+<%= form_tag "/admin/appraisalfees" do %>
+
+<h2>Index of appraisals fees</h2>
+
+<table class="table table-hover">
+  <tr>
+    <th>ID #</th>
+    <th>Description</th>
+    <th>Fee</th>
+  </tr>
+  <% for appraisal_fee in @appraisal_fee %>
+    <tr>
+      <td><%= appraisal_fee.id %></td>
+      <td><%= appraisal_fee.description %></td>
+      <td><%= appraisal_fee.fee %></td>
+      <td>
+        <a href="/admin/appraisalfees/<%= appraisal_fee.id %>">Edit</a>
+      </td>
+      <td>
+        <%= submit_tag "Delete appraisal_fee #{appraisal_fee.id}", data: { confirm: 'ARE YOU SURE ?' }, class: "btn btn-default" %>
+      </td>
+    </tr>
+  <% end %>
+  <tr>
+    <td colspan="5">
+      <a href="/admin/appraisalfees/new">Add new appraisal fee</a>
+    </td>
+  </tr>
+</table>
+
+
+<% end %>

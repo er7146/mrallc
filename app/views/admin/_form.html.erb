@@ -1,0 +1,18 @@
+<% if @appraisal_fee.id %>
+  <p>
+    <b>ID #: </b><%= @appraisal_fee.id %>
+  </p>
+<% end %>
+
+<p>
+  Description
+  <br>
+  <%= text_area_tag :description , @appraisal_fee.description, class: "form-control", rows: 3 %>
+</p>
+
+<p>
+  Fee
+  <br>
+  <%= text_field_tag :fee, @appraisal_fee.fee, class: "form-control" %>
+</p>
+

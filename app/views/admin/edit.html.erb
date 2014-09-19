@@ -1,0 +1,11 @@
+<h3>Edit Appraisals Fees #<%= @appraisal_fee.id %></h3>
+
+<%== error_messages_for @appraisal_fee %>
+
+<%== form_tag "/admin/appraisalfees/#{@appraisal_fee.id}" do %>
+  <%== render partial: "form" %>
+
+  <p>
+    <%== submit_tag "Update", class: "btn btn-default" %>
+  </p>
+<% end %>
