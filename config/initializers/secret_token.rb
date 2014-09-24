@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-mrallc::Application.config.secret_key_base = Rails.env.production? ? ENV['SESSION_SECRET'] : 'f96c4bd3bb622379164adbf5638b05612f8c9728d05527298d0dfcc3b08cbc2286e187250c9f3313f098177ff7023ce59d60a773331bc6a392ac48cc807fece1'
+App::Application.config.secret_key_base = Rails.env.production? ? ENV['SESSION_SECRET'] : 'f96c4bd3bb622379164adbf5638b05612f8c9728d05527298d0dfcc3b08cbc2286e187250c9f3313f098177ff7023ce59d60a773331bc6a392ac48cc807fece1'
