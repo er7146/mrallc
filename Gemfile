@@ -49,6 +49,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'dynamic_form' # for error_messages_for
 gem 'rake_db_dump'
 
+gem 'thin'
+
 gem 'rails_12factor' # serve production assets
 gem 'pry-rails', group: :development
 gem 'awesome_print', group: :development
