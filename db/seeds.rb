@@ -71,7 +71,9 @@ Appraisal_fee.create! \
   fee:         "$50" 
   
   
-                     
+Admin.create! \
+  username: "mark", password: "mR4ll*A7ee8", 
+  password_confirmation: "mR4ll*A7ee8"                 
 
 
 
